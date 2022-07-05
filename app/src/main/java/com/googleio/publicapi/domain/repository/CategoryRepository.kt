@@ -4,5 +4,5 @@ import com.googleio.publicapi.domain.models.BaseCategory
 import com.googleio.publicapi.domain.models.Resource
 
 interface CategoryRepository {
-    fun getCategories() : Resource<BaseCategory>
+    suspend fun getCategories() : Resource<BaseCategory>
 }

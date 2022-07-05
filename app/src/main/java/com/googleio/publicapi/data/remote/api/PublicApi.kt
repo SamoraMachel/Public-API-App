@@ -8,8 +8,8 @@ import retrofit2.http.GET
 interface PublicApi {
 
     @GET("/entries")
-    fun fetchEntries() : Response<BaseEntryDto>
+    suspend fun fetchEntries() : Response<BaseEntryDto>
 
     @GET("/categories")
-    fun fetchCategories() : Response<BaseCategoryDto>
+    suspend fun fetchCategories() : Response<BaseCategoryDto>
 }
