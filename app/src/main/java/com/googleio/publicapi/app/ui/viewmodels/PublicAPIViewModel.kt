@@ -4,6 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.googleio.publicapi.app.mappers.toPresenter
+import com.googleio.publicapi.app.models.BaseEntryPresenter
 import com.googleio.publicapi.domain.models.Resource
 import com.googleio.publicapi.domain.repository.CategoryRepository
 import com.googleio.publicapi.domain.usecases.FetchCategoryUseCase
@@ -24,7 +26,7 @@ class PublicAPIViewModel @Inject constructor(
     val entryDataList : LiveData<EntryState> = _entryDataList
 
 
-    init{
+    init {
         getEntryData()
     }
 
@@ -32,9 +34,11 @@ class PublicAPIViewModel @Inject constructor(
         when (val entryDataResource = fetchEntryUseCase()) {
             is Resource.Success -> {
                 if(entryDataResource.data?.entries?.size == 0) {
-                     _entryDataList.value = EntryState.Empty(entryDataResource.data)
+                     _entryDataList.value = EntryState.Empty(entryDataResource.data.toPresenter())
                 } else {
-                    _entryDataList.value = EntryState.Success(entryDataResource.data)
+                    _entryDataList.value = entryDataResource.data?.toPresenter()?.let {
+                        EntryState.Success(it)
+                    }
                 }
             }
             is Resource.Error -> {
@@ -52,9 +56,9 @@ class PublicAPIViewModel @Inject constructor(
     }
 
     sealed class EntryState {
-        data class Success<T>(val data : T) : EntryState()
+        data class Success(val data : BaseEntryPresenter) : EntryState()
 
-        data class Empty<T>(val data: T) : EntryState()
+        data class Empty(val data: BaseEntryPresenter?) : EntryState()
 
         data class Failure(val message: String) : EntryState()
 

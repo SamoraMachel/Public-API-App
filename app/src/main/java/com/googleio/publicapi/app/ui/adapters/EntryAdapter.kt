@@ -9,7 +9,9 @@ import com.googleio.publicapi.app.models.EntryPresenter
 import com.googleio.publicapi.databinding.EntrySingleDetailBinding
 
 
-class EntryAdapter(private val entryList: List<EntryPresenter>) : RecyclerView.Adapter<EntryAdapter.EntryViewHolder>() {
+class EntryAdapter(private val entryList: List<EntryPresenter>,
+                   private val onItemClicked : (EntryPresenter) -> Unit
+) : RecyclerView.Adapter<EntryAdapter.EntryViewHolder>() {
     class EntryViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView) {
         val binding = EntrySingleDetailBinding.bind(itemView)
 
@@ -29,6 +31,9 @@ class EntryAdapter(private val entryList: List<EntryPresenter>) : RecyclerView.A
     override fun onBindViewHolder(holder: EntryViewHolder, position: Int) {
         val entryItem = entryList[position]
         holder.setup(entryItem)
+        holder.binding.entryCard.setOnClickListener {
+            onItemClicked(entryItem)
+        }
     }
 
     override fun getItemCount(): Int {
