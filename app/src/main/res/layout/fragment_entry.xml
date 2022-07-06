@@ -6,6 +6,9 @@
     tools:context=".app.ui.viewmodels.EntryFragment">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/EntryRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        tools:listitem="@layout/entry_dingle_detail" />
 </FrameLayout>
