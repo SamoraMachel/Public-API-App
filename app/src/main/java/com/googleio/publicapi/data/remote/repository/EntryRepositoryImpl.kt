@@ -16,11 +16,11 @@ class EntryRepositoryImpl(
             if(returnData.isSuccessful)
                 return Resource.Success(returnData.body()?.toDomain())
             else
-                return Resource.Error("Unknown Error Occurred", returnData.body()?.toDomain())
+                return Resource.Error("Server Error: Unknown Error Occurred", returnData.body()?.toDomain())
         } catch (error: IOException) {
-            Resource.Error("Network Error. Please check you Internet")
+            Resource.Error("Network Error: Kindly check your internet")
         } catch (error: Exception) {
-            Resource.Error("Unknown Error Occurred")
+                Resource.Error(error.message)
         }
     }
 }

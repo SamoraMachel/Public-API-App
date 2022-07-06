@@ -7,7 +7,7 @@ import com.googleio.publicapi.domain.repository.EntryRepository
 class FetchEntryUseCase constructor(
     private val entryRepository: EntryRepository
 ) {
-    suspend fun invoke(): Resource<BaseEntry> {
+    suspend operator fun invoke(): Resource<BaseEntry> {
         return entryRepository.getEntries()
     }
 }

@@ -7,7 +7,7 @@ import com.googleio.publicapi.domain.repository.CategoryRepository
 class FetchCategoryUseCase constructor(
     private val categoryRepository: CategoryRepository
 ){
-    suspend fun invoke(): Resource<BaseCategory> {
+    suspend operator fun invoke(): Resource<BaseCategory> {
         return categoryRepository.getCategories()
     }
 }
