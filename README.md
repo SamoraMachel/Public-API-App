@@ -1,23 +1,16 @@
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="PublicAPI" />
-
-  &#xa0;
-
-  <!-- <a href="https://publicapi.netlify.app">Demo</a> -->
-</div>
 
 <h1 align="center">API App for Developers</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/SamoraMachel/publicapi?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/SamoraMachel/Public-API-App?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/SamoraMachel/publicapi?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/SamoraMachel/Public-API-App?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/SamoraMachel/publicapi?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/SamoraMachel/Public-API-App?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/SamoraMachel/publicapi?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/SamoraMachel/Public-API-App?color=56BEB8">
 
-  <img alt="Github forks" src="https://img.shields.io/github/forks/SamoraMachel/publicapi?color=56BEB8" />
+  <img alt="Github forks" src="https://img.shields.io/github/forks/SamoraMachel/Public-API-App?color=56BEB8" />
 </p>
 
 
@@ -80,7 +73,7 @@ You also need to have knowledge on how to work with fragments and basic navigati
 
 ```bash
 # Clone this project
-$ git clone https://github.com/SamoraMachel/publicapi
+$ git clone https://github.com/SamoraMachel/Public-API-App
 
 # Access
 $ cd publicapi
