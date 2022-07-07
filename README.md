@@ -35,7 +35,21 @@
 
 ## :dart: About ##
 
-Describe your project
+<p>
+This is an application that displays a list of public api for use by developers. This app consists of 2 sections: The API list section and the API detail section. 
+</p>
+<p> 
+The projects is implemented using clean architecture with the MVVM (Model View Model) pattern. The project is thus layered into 3 parts
+
+  - Domain
+  - Data 
+  - App
+
+</p>
+
+<p>
+This applicatin is meant to server as a starter for using sliding pane layout.
+</p>
 
 ## :sparkles: Features ##
 
@@ -60,24 +74,19 @@ I used the following libraries for the creation of the application:
 ## :white_check_mark: Requirements ##
 
 Before starting :checkered_flag:, you need to have `Android Studio` and `Kotlin` installed.
+You also need to have knowledge on how to work with fragments and basic navigation.
 
 ## :checkered_flag: Starting ##
 
 ```bash
 # Clone this project
-$ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/publicapi
+$ git clone https://github.com/SamoraMachel/publicapi
 
 # Access
 $ cd publicapi
 
-# Install dependencies
-$ yarn
-
-# Run the project
-$ yarn start
-
-# The server will initialize in the <http://localhost:3000>
 ```
+open the app in android studio and run.
 
 ## :memo: License ##
 
