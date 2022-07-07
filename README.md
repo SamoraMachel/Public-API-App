@@ -41,12 +41,12 @@ The projects is implemented using clean architecture with the MVVM (Model View M
 </p>
 
 <p>
-This applicatin is meant to server as a starter for using sliding pane layout.
+This application is meant to server as a starter for using sliding pane layout.
 </p>
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: List public APIs'
+:heavy_check_mark: List public APIs'\
 :heavy_check_mark: Preview the details of the API
 
 ## :rocket: Technologies ##
@@ -74,10 +74,6 @@ You also need to have knowledge on how to work with fragments and basic navigati
 ```bash
 # Clone this project
 $ git clone https://github.com/SamoraMachel/Public-API-App
-
-# Access
-$ cd publicapi
-
 ```
 open the app in android studio and run.
 
