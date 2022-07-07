@@ -39,6 +39,7 @@ class DetailFragment : Fragment() {
 
         publicApiViewModel.clickedAPI.observe(viewLifecycleOwner) { url ->
             if (url != "") {
+                binding.webProgressBar.visibility = View.VISIBLE
                 web_view.apply {
                     settings.javaScriptEnabled = true
                     loadUrl(url)
