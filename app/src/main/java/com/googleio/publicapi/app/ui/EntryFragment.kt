@@ -30,7 +30,8 @@ class EntryFragment : Fragment() {
         val binding = FragmentEntryBinding.inflate(layoutInflater)
         root = binding.root
 
-//        viewmodel = ViewModelProvider(this).get(PublicAPIViewModel::class.java)
+        val slidingPaneLayout = binding.slidingPaneLayout
+
 
         val entryRecyclerView = binding.EntryRecyclerView
         entryRecyclerView.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
@@ -44,8 +45,7 @@ class EntryFragment : Fragment() {
                     entryRecyclerView.adapter = EntryAdapter(it.data.entries) {
                         publicApiViewModel.updateClickedAPI(it.Link)
 
-                        val action = EntryFragmentDirections.actionEntryFragmentToDetailFragment()
-                        findNavController().navigate(action)
+                        slidingPaneLayout.openPane()
                     }
                 }
                 is PublicAPIViewModel.EntryState.Failure -> {

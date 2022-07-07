@@ -34,11 +34,11 @@ class DetailFragment : Fragment() {
         binding = FragmentDetailBinding.inflate(layoutInflater)
         root = binding.root
 
-
         val web_view = binding.detailWebView
 
         publicApiViewModel.clickedAPI.observe(viewLifecycleOwner) { url ->
             if (url != "") {
+                binding.webProgressBar.visibility = View.VISIBLE
                 web_view.apply {
                     settings.javaScriptEnabled = true
                     loadUrl(url)
@@ -51,15 +51,15 @@ class DetailFragment : Fragment() {
                     }
                     override fun onPageFinished(view: WebView?, url: String?) {
                         super.onPageFinished(view, url)
-                        binding.webProgressBar.visibility = View.GONE
+                        binding.webProgressBar.visibility = View.INVISIBLE
                     }
                 }
             } else {
-                Snackbar.make(requireView(), "Broken URL", Snackbar.LENGTH_INDEFINITE)
-                    .setAction("Exit") {
-                        requireActivity().onBackPressed()
-                    }.show()
-                binding.webProgressBar.visibility = View.GONE
+//                Snackbar.make(requireView(), "Broken URL", Snackbar.LENGTH_INDEFINITE)
+//                    .setAction("Exit") {
+//                        requireActivity().onBackPressed()
+//                    }.show()
+                binding.webProgressBar.visibility = View.INVISIBLE
             }
         }
 
