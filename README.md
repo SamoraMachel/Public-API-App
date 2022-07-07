@@ -41,7 +41,7 @@ The projects is implemented using clean architecture with the MVVM (Model View M
 </p>
 
 <p>
-This application is meant to server as a starter for using sliding pane layout.
+This application is meant to serve as a starter for using sliding pane layout.
 </p>
 
 ## :sparkles: Features ##
