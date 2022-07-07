@@ -1,32 +1,40 @@
-
-<h1 align="center">API App for Developers</h1>
-
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/SamoraMachel/Public-API-App?color=56BEB8">
-
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/SamoraMachel/Public-API-App?color=56BEB8">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/SamoraMachel/Public-API-App?color=56BEB8">
-
-  <img alt="License" src="https://img.shields.io/github/license/SamoraMachel/Public-API-App?color=56BEB8">
-
-  <img alt="Github forks" src="https://img.shields.io/github/forks/SamoraMachel/Public-API-App?color=56BEB8" />
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
 </p>
 
-
+<h3 align="center">API app for developers</h3>
 <p align="center">
-  <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
-  <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
-  <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
-  <a href="#memo-license">License</a> &#xa0; | &#xa0;
-  <a href="https://github.com/SamoraMachel/" target="_blank">Author</a>
+  <img alt="Status" src="https://img.shields.io/badge/status-active-success.svg">
+
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/SamoraMachel/Public-API-App.svg">
+
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/SamoraMachel/Public-API-App.svg">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/SamoraMachel/Public-API-App.svg">
+
+  <img alt="License" src="https://img.shields.io/github/license/SamoraMachel/Public-API-App.svg">
+
+  <img alt="Github forks" src="https://img.shields.io/github/forks/SamoraMachel/Public-API-App.svg" />
 </p>
 
-<br>
+---
 
-## :dart: About ##
+<p align="center"> Android application for finding public APIs'
+    <br> 
+</p>
+
+## 📝 Table of Contents
+
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [TODO](./TODO.md)
+- [Contributing](./CONTRIBUTING.md)
+- [Authors](#authors)
+
+## 🧐 About <a name = "about"></a>
 
 <p>
 This is an application that displays a list of public api for use by developers. This app consists of 2 sections: The API list section and the API detail section. 
@@ -40,18 +48,67 @@ The projects is implemented using clean architecture with the MVVM (Model View M
 
 </p>
 
-<p>
-This application is meant to server as a starter for using sliding pane layout.
-</p>
 
-## :sparkles: Features ##
+## 🏁 Getting Started <a name = "getting_started"></a>
 
-:heavy_check_mark: List public APIs'\
-:heavy_check_mark: Preview the details of the API
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
 
-## :rocket: Technologies ##
+### Prerequisites
 
-I used the following libraries for the creation of the application:
+First before you run the application a the user is required to be having the following installed :
+
+```
+Android Studion
+Kotlin
+```
+
+### Installing
+
+A step by step series of examples that tell you how to get the application running.
+
+Clone the project into your device
+
+```bash
+# Clone this project
+$ git clone https://github.com/SamoraMachel/Public-API-App
+
+# Access
+$ cd publicapi
+
+```
+open the app in android studio and run.
+
+
+## 🔧 Running the tests <a name = "tests"></a>
+
+To run the test, in the root folder of the application use:
+```bash
+# run tests
+$ ./gradlew test
+```
+
+<!-- ### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+``` -->
+
+## 🎈 Usage <a name="usage"></a>
+
+Build the application and in your android phone or emulator and run the application.
+
+
+## ⛏️ Built Using <a name = "built_using"></a>
 
 - Kotlin
 - Sliding PaneLayout
@@ -63,27 +120,10 @@ I used the following libraries for the creation of the application:
   - Live Data 
   - Navigation
 
+## ✍️ Authors <a name = "authors"></a>
 
-## :white_check_mark: Requirements ##
+- [@SamorMachel](https://github.com/SamoraMachel) - Idea & Initial work
 
-Before starting :checkered_flag:, you need to have `Android Studio` and `Kotlin` installed.
-You also need to have knowledge on how to work with fragments and basic navigation.
-
-## :checkered_flag: Starting ##
-
-```bash
-# Clone this project
-$ git clone https://github.com/SamoraMachel/Public-API-App
-```
-open the app in android studio and run.
-
-## :memo: License ##
-
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+See also the list of [contributors](https://github.com/SamoraMachel/Public-API-App/contributors) who participated in this project.
 
 
-Made with :heart: by <a href="https://github.com/SamoraMachel/" target="_blank">Samora Machel</a>
-
-&#xa0;
-
-<a href="#top">Back to top</a>
