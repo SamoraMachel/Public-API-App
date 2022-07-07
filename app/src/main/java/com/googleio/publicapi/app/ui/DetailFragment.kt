@@ -55,10 +55,10 @@ class DetailFragment : Fragment() {
                     }
                 }
             } else {
-                Snackbar.make(requireView(), "Broken URL", Snackbar.LENGTH_INDEFINITE)
-                    .setAction("Exit") {
-                        requireActivity().onBackPressed()
-                    }.show()
+//                Snackbar.make(requireView(), "Broken URL", Snackbar.LENGTH_INDEFINITE)
+//                    .setAction("Exit") {
+//                        requireActivity().onBackPressed()
+//                    }.show()
                 binding.webProgressBar.visibility = View.GONE
             }
         }
