@@ -64,6 +64,8 @@ dependencies {
     kapt "com.google.dagger:hilt-compiler:2.42"
 
 
+    // sliding pane layout
+    implementation "androidx.slidingpanelayout:slidingpanelayout:1.2.0"
 
 
 
