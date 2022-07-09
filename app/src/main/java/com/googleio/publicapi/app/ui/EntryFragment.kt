@@ -73,6 +73,10 @@ private class EntryListBackPressed(
         slidingPaneLayout.closePane()
     }
 
+    init {
+        slidingPaneLayout.addPanelSlideListener(this)
+    }
+
     override fun onPanelSlide(panel: View, slideOffset: Float) {
     }
 
