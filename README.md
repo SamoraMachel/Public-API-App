@@ -33,6 +33,8 @@
 - [TODO](./TODO.md)
 - [Contributing](./CONTRIBUTING.md)
 - [Authors](#authors)
+- [Feature Request](./.github/ISSUE_TEMPLATE/feature_request.md)
+- [Bug Report](./.github/ISSUE_TEMPLATE/bug_report.md)
 
 ## 🧐 About <a name = "about"></a>
 
